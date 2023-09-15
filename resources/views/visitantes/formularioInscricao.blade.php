@@ -133,7 +133,7 @@
 
 			<div class="card">
 				<div class="card-header">
-					<h5 class="mb-0">Titulação (Mestrado, dourotado) <code>(PDF, JPG, JPEG)</code></h5>
+					<h5 class="mb-0">Titulação (Especialização, Mestrado, Doutorado) <code>(PDF, JPG, JPEG)</code></h5>
 				</div>
 				<div class="card-body">
 					<p class="fw-semibold">Pré visualização</p>
