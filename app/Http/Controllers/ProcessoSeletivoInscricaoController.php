@@ -64,7 +64,7 @@ class ProcessoSeletivoInscricaoController extends Controller
             'endereco' => 'required',
             'bairro' => '',
             'numero_contato' => 'required',
-            'email' => '',
+            'email' => 'required',
             'data_nascimento' => 'required',
             'anexo_documento' => 'required',
             'anexo_curriculo' => 'required',

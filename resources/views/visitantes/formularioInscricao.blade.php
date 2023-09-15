@@ -92,9 +92,9 @@
 			</div>
 
 			<div class="row mb-3">
-				<label class="col-form-label col-lg-3">Email</label>
+				<label class="col-form-label col-lg-3">Email <span class="text-danger">*</span></label>
 				<div class="col-lg-9">
-					<input type="email" name="email" class="form-control" id="email" placeholder="Adicione um email válido" aria-invalid="true">
+					<input type="email" name="email" class="form-control" required id="email" placeholder="Adicione um email válido" aria-invalid="true">
 				</div>
 			</div>
 
