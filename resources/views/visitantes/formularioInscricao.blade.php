@@ -175,7 +175,7 @@
                     </div>
                     <div class="card-body">
                         <p class="fw-semibold">Pré visualização</p>
-                        <input type="file" name="anexo_escolaridade[]" class="file-input" multiple="multiple"
+                        <input type="file" name="anexo_escolaridade[]" class="file-input-required" multiple="multiple"
                             accept=".jpg,.png,.jpeg,.pdf">
                     </div>
                 </div>
@@ -187,7 +187,7 @@
                     </div>
                     <div class="card-body">
                         <p class="fw-semibold">Pré visualização</p>
-                        <input type="file" name="anexo_titulacao[]" class="file-input" multiple="multiple"
+                        <input type="file" name="anexo_titulacao[]" class="file-input-required" multiple="multiple"
                             accept=".jpg,.png,.jpeg,.pdf">
                     </div>
                 </div>
@@ -198,7 +198,7 @@
                     </div>
                     <div class="card-body">
                         <p class="fw-semibold">Pré visualização</p>
-                        <input type="file" name="anexo_qualificacao[]" class="file-input" multiple="multiple"
+                        <input type="file" name="anexo_qualificacao[]" class="file-input-required" multiple="multiple"
                             accept=".jpg,.png,.jpeg,.pdf">
                     </div>
                 </div>
@@ -209,7 +209,7 @@
                     </div>
                     <div class="card-body">
                         <p class="fw-semibold">Pré visualização</p>
-                        <input type="file" name="anexo_experiencia_profissional[]" class="file-input"
+                        <input type="file" name="anexo_experiencia_profissional[]" class="file-input-required"
                             multiple="multiple" accept=".jpg,.png,.jpeg,.pdf">
                     </div>
                 </div>
