@@ -39,8 +39,8 @@
                     <th>ID</th>
                     <th>Município</th>
                     <th>Área de Atuação</th>
-                    <th>Descrição</th>
-                    <th>Salário</th>
+                    <th>Requisitos Mínimos</th>
+                    <th>Remuneração</th>
                     <th>Vagas</th>
                     <th class="text-center">Ações</th>
                 </tr>
