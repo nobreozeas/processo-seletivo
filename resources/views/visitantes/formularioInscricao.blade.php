@@ -45,6 +45,12 @@
 					<input type="text" name="nome" class="form-control" required="" placeholder="Nome completo sem abreviações" aria-invalid="false">
 				</div>
 			</div>
+            <div class="row mb-3">
+				<label class="col-form-label col-lg-3">Data de Nascimento <span class="text-danger">*</span></label>
+				<div class="col-lg-9">
+					<input type="date" name="data_nascimento" class="form-control" required="" aria-invalid="false">
+				</div>
+			</div>
 			<div class="row mb-3">
 				<label class="col-form-label col-lg-3">Tipo de Documento <span class="text-danger">*</span></label>
 				<div class="col-lg-4">

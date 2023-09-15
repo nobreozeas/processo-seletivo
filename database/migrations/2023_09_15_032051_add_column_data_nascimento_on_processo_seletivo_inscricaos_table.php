@@ -13,7 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        //
+        Schema::table('processo_seletivo_inscricaos', function (Blueprint $table) {
+            $table->date('data_nascimento')->nullable();
+        });
     }
 
     /**
@@ -23,6 +25,8 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::table('processo_seletivo_inscricaos', function (Blueprint $table) {
+            $table->dropColumn('data_nascimento');
+        });
     }
 };

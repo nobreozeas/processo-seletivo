@@ -65,6 +65,7 @@ class ProcessoSeletivoInscricaoController extends Controller
             'bairro' => '',
             'numero_contato' => 'required',
             'email' => '',
+            'data_nascimento' => 'required',
             'anexo_documento' => 'required',
             'anexo_curriculo' => 'required',
             'anexo_titulacao' => '',
