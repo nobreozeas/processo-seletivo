@@ -66,6 +66,7 @@ class ProcessoSeletivoInscricaoController extends Controller
             'numero_contato' => 'required',
             'email' => '',
             'anexo_documento' => 'required',
+            'anexo_curriculo' => 'required',
             'anexo_titulacao' => '',
             'anexo_qualificacao' => '',
             'anexo_experiencia_profissional' => '',
@@ -76,7 +77,15 @@ class ProcessoSeletivoInscricaoController extends Controller
             {
                 // $fileName = time().rand(1,99).'.'.$file->extension();
                 $fileName = \Str::random(128) . '.'.$file->extension();
-                $file->storeAs("public/inscricao/$new->id/documentos", "$fileName");   
+                $file->storeAs("public/inscricao/$new->id/documentos", "$fileName");
+            }
+        }
+
+        if($request->file('anexo_curriculo')){
+            foreach($request->file('anexo_curriculo') as $key => $file)
+            {
+                $fileName = \Str::random(128) . '.'.$file->extension();
+                $file->storeAs("public/inscricao/$new->id/curriculos", "$fileName");
             }
         }
 
@@ -84,7 +93,7 @@ class ProcessoSeletivoInscricaoController extends Controller
             foreach($request->file('anexo_titulacao') as $key => $file)
             {
                 $fileName = \Str::random(128) . '.'.$file->extension();
-                $file->storeAs("public/inscricao/$new->id/titulacao", "$fileName");   
+                $file->storeAs("public/inscricao/$new->id/titulacao", "$fileName");
             }
         }
 
@@ -92,7 +101,7 @@ class ProcessoSeletivoInscricaoController extends Controller
             foreach($request->file('anexo_qualificacao') as $key => $file)
             {
                 $fileName = \Str::random(128) . '.'.$file->extension();
-                $file->storeAs("public/inscricao/$new->id/qualificacao", "$fileName");   
+                $file->storeAs("public/inscricao/$new->id/qualificacao", "$fileName");
             }
         }
 
@@ -100,7 +109,7 @@ class ProcessoSeletivoInscricaoController extends Controller
             foreach($request->file('anexo_experiencia_profissional') as $key => $file)
             {
                 $fileName = \Str::random(128) . '.'.$file->extension();
-                $file->storeAs("public/inscricao/$new->id/experiencia_profissional", "$fileName");  
+                $file->storeAs("public/inscricao/$new->id/experiencia_profissional", "$fileName");
             }
         }
         return redirect()->route("inscricao")->with('success', 'inscrição realizada com sucesso!');
@@ -182,5 +191,5 @@ class ProcessoSeletivoInscricaoController extends Controller
     public function downloadArquivo($path){
         return Storage::download($path);
     }
-    
+
 }
