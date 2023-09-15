@@ -69,6 +69,7 @@ class ProcessoSeletivoInscricaoController extends Controller
             'anexo_curriculo' => 'required',
             'anexo_titulacao' => '',
             'anexo_qualificacao' => '',
+            'anexo_escolaridade' => 'required',
             'anexo_experiencia_profissional' => '',
         ]);
         $new = ProcessoSeletivoInscricao::create($validatedData);
@@ -86,6 +87,14 @@ class ProcessoSeletivoInscricaoController extends Controller
             {
                 $fileName = \Str::random(128) . '.'.$file->extension();
                 $file->storeAs("public/inscricao/$new->id/curriculos", "$fileName");
+            }
+        }
+
+        if ($request->file('anexo_escolaridade')){
+            foreach($request->file('anexo_escolaridade') as $key => $file)
+            {
+                $fileName = \Str::random(128) . '.'.$file->extension();
+                $file->storeAs("public/inscricao/$new->id/escolaridade", "$fileName");
             }
         }
 

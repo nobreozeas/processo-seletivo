@@ -115,6 +115,16 @@
 				</div>
 			</div>
 
+            <div class="card">
+				<div class="card-header">
+					<h5 class="mb-0">Comprovante de Escolaridade <code>(PDF, JPG, JPEG)</code></h5>
+				</div>
+				<div class="card-body">
+					<p class="fw-semibold">Pré visualização</p>
+					<input type="file" name="anexo_escolaridade[]" class="file-input" multiple="multiple" accept=".jpg,.png,.jpeg,.pdf">
+				</div>
+			</div>
+
 			<div class="card">
 				<div class="card-header">
 					<h5 class="mb-0">Titulação (Mestrado, dourotado) <code>(PDF, JPG, JPEG)</code></h5>
