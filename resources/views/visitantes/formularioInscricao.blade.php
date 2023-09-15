@@ -106,7 +106,7 @@
 
 			<div class="card">
 				<div class="card-header">
-					<h5 class="mb-0">Documento com foto (RG, Passaporte, Carteira de Trabalho) <code>(PDF, JPG, JPEG)</code></h5>
+					<h5 class="mb-0">Documento com foto (RG, CNH, Carteira de Identidade Profissional) <code>(PDF, JPG, JPEG)</code></h5>
 				</div>
 				<div class="card-body">
 					<p class="mb-3">Exemplo de documentos (com foto): RG, Passaporte, Carteira de Trabalho.</p>
