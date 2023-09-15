@@ -38,7 +38,7 @@
                 <tr>
                     <th>ID</th>
                     <th>Município</th>
-                    <th>Titulo</th>
+                    <th>Área de Atuação</th>
                     <th>Descrição</th>
                     <th>Salário</th>
                     <th>Vagas</th>
